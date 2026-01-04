@@ -1,0 +1,38 @@
+{
+  "name": "distributed-api-task-system",
+  "version": "1.0.0",
+  "description": "A **production-grade backend infrastructure project** designed to demonstrate deep understanding of **rate limiting**, **distributed job processing**, **retries**, **idempotency**, and **system reliability**.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec tsx src/server/index.ts",
+    "build": "tsc",
+    "start": "node dist/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeep-rajputt/distributed-api-task-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/sandeep-rajputt/distributed-api-task-system/issues"
+  },
+  "homepage": "https://github.com/sandeep-rajputt/distributed-api-task-system#readme",
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "bullmq": "^5.66.4",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "ioredis": "^5.8.2",
+    "zod": "^4.3.5"
+  }
+}
