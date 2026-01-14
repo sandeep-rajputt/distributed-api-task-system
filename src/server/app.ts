@@ -1,4 +1,5 @@
-import express, { type Application } from "express";
+import express from "express";
+import errorHandler from "../middlewares/errorHandler.js";
 
 function createApp() {
   const app = express();
@@ -12,6 +13,8 @@ function createApp() {
       status: "ok",
     });
   });
+
+  app.use(errorHandler);
 
   return app;
 }
